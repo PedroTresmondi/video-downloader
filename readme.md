@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="assets/vdownloader.png" alt="Video Downloader Icon" width="100">
+    ![Video Downloader Icon](assets/vdownloader.png)
 </p>
 
 # Video Downloader
