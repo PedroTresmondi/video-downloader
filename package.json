@@ -1,0 +1,45 @@
+{
+  "name": "video-downloader",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "files": [
+    "main.js",
+    "renderer.js",
+    "index.html",
+    "styles.css",
+    "node_modules"
+  ],
+  "keywords": [],
+  "author": "3smondi",
+  "license": "ISC",
+  "description": "Um app Electron para baixar vídeos do YouTube",
+  "devDependencies": {
+    "electron": "^33.2.0",
+    "electron-builder": "^25.1.8"
+  },
+  "dependencies": {
+    "ffmpeg-static": "^5.2.0",
+    "ytdl-core": "^4.11.5"
+  },
+  "build": {
+    "appId": "com.video.downloader",
+    "productName": "Video Downloader",
+    "win": {
+      "target": "nsis",
+      "icon": "assets/vdownloader.ico",
+      "signAndEditExecutable": false
+    },
+    "mac": {
+      "target": "dmg",
+      "icon": "assets/vdownloader.icns"
+    },
+    "linux": {
+      "target": "AppImage",
+      "icon": "assets/vdownloader.png"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Downloader de Vídeos do YouTube</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Downloader de Vídeos do YouTube</h1>
+        <div class="input-group">
+            <label for="url">URL do Vídeo:</label>
+            <input type="text" id="url" placeholder="Cole a URL do YouTube aqui">
+        </div>
+        <button id="get-info">Obter Informações do video</button>
+
+        <div id="info-section" class="hidden">
+            <p id="title">Título: <span id="video-title">Não disponível</span></p>
+            <img id="thumbnail" src="" alt="Thumbnail" class="thumbnail hidden" />
+
+            <div class="input-group">
+                <label for="quality">Qualidade:</label>
+                <select id="quality"></select>
+            </div>
+
+            <button id="choose-folder">Escolher Local</button>
+            <p id="save-path">Caminho do arquivo: <span id="file-path">Não selecionado</span></p>
+            <button id="download">Baixar Vídeo</button>
+
+            <div id="progress-container" class="hidden">
+                <div id="progress-bar">0%</div>
+            </div>
+
+        </div>
+
+        <p id="status"></p>
+    </div>
+    <script src="renderer.js"></script>
+</body>
+
+</html>
